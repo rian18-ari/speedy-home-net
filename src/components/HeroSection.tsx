@@ -64,7 +64,7 @@ const HeroSection = () => {
               size="lg"
               variant="outline"
               className="border-white/40 text-white hover:bg-white/10 font-semibold px-8 py-6 text-base rounded-xl"
-              onClick={() => scrollTo("daftar")}
+              onClick={() => window.open("https://scalev.id", "_blank")}
             >
               Berlangganan Sekarang
             </Button>

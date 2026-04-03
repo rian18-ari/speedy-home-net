@@ -51,9 +51,9 @@ const PricingSection = () => {
               </ul>
               <Button
                 className={`w-full py-5 rounded-xl font-semibold ${plan.popular ? "bg-primary text-primary-foreground hover:bg-primary/90" : "bg-secondary text-secondary-foreground hover:bg-secondary/80"}`}
-                onClick={() => scrollTo("daftar")}
+                onClick={() => window.open(`${SCALEV_URL}?paket=${plan.name.toLowerCase()}`, "_blank")}
               >
-                Berlangganan
+                Berlangganan via Scalev
               </Button>
             </motion.div>
           ))}

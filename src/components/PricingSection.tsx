@@ -8,11 +8,9 @@ const plans = [
   { name: "Pro", speed: "50 Mbps", price: "250.000", features: ["Unlimited Data", "Support Prioritas", "Instalasi Gratis", "Router Gratis", "IP Statis"], popular: false },
 ];
 
-const PricingSection = () => {
-  const scrollTo = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-  };
+const SCALEV_URL = "https://scalev.id";
 
+const PricingSection = () => {
   return (
     <section id="paket" className="py-20 bg-muted/50">
       <div className="container mx-auto px-4">
@@ -53,9 +51,9 @@ const PricingSection = () => {
               </ul>
               <Button
                 className={`w-full py-5 rounded-xl font-semibold ${plan.popular ? "bg-primary text-primary-foreground hover:bg-primary/90" : "bg-secondary text-secondary-foreground hover:bg-secondary/80"}`}
-                onClick={() => scrollTo("daftar")}
+                onClick={() => window.open(`${SCALEV_URL}?paket=${plan.name.toLowerCase()}`, "_blank")}
               >
-                Berlangganan
+                Berlangganan via Scalev
               </Button>
             </motion.div>
           ))}

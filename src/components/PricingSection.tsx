@@ -8,11 +8,9 @@ const plans = [
   { name: "Pro", speed: "50 Mbps", price: "250.000", features: ["Unlimited Data", "Support Prioritas", "Instalasi Gratis", "Router Gratis", "IP Statis"], popular: false },
 ];
 
-const PricingSection = () => {
-  const scrollTo = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-  };
+const SCALEV_URL = "https://scalev.id";
 
+const PricingSection = () => {
   return (
     <section id="paket" className="py-20 bg-muted/50">
       <div className="container mx-auto px-4">

@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Wifi, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import Link from 'next/link';
+import { Link } from 'react-router-dom';
 
 const OrderRTRWNet = () => {
   return (
@@ -24,7 +24,7 @@ const OrderRTRWNet = () => {
             Ingin memasang jaringan RT-RW Net di lingkungan Anda? Hubungi kami untuk konsultasi dan pemesanan langsung.
           </p>
           <Link
-            href="https://bintang-jaya.myscalev.com/p/rt-rw-net"
+            to="https://bintang-jaya.myscalev.com/p/rt-rw-net"
             className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold px-10 py-6 text-base rounded-xl shadow-lg gap-2"
             
           > 

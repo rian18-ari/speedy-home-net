@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Wifi, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Link from 'next/link';
 
 const OrderRTRWNet = () => {
   return (
@@ -22,19 +23,14 @@ const OrderRTRWNet = () => {
           <p className="text-muted-foreground mb-8 max-w-md mx-auto">
             Ingin memasang jaringan RT-RW Net di lingkungan Anda? Hubungi kami untuk konsultasi dan pemesanan langsung.
           </p>
-          <Button
-            size="lg"
+          <Link
+            href="https://bintang-jaya.myscalev.com/p/rt-rw-net"
             className="bg-primary text-primary-foreground hover:bg-primary/90 font-semibold px-10 py-6 text-base rounded-xl shadow-lg gap-2"
-            onClick={() =>
-              window.open(
-                "https://wa.me/6281234567890?text=Halo%2C%20saya%20ingin%20memesan%20layanan%20RT-RW%20Net",
-                "_blank"
-              )
-            }
-          >
+            
+          > 
             Pesan Sekarang
             <ArrowRight className="w-5 h-5" />
-          </Button>
+          </Link>
         </motion.div>
       </div>
     </section>
